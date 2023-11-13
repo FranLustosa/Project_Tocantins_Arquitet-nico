@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/card_home_page.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/footer.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Widgets/card_home_page.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/appBar.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/carroussel_home_page.dart';
 

@@ -130,13 +130,31 @@ class FotterSuperior extends StatelessWidget {
 }
 
 class FotterInferior extends StatelessWidget {
-  const FotterInferior({super.key});
+  const FotterInferior({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 54,
+      width: 500,
       color: Color.fromRGBO(93, 76, 22, 1),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              "© 2023 tocantinsarquitetonico.com.br - fábrica de software unicatólica",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
