@@ -30,8 +30,8 @@ class MyCard extends StatelessWidget {
                   bottom: 250,
                   left: 30,
                   child: Text(
-                    "Catedral Nossa Senhora Das\nMerces - Porto Nacional",
-                    style: TextStyle(color: Colors.white, fontSize: 35),
+                    "Catedral Nossa Senhora\n\nDas Merces - Porto Nacional",
+                    style: TextStyle(color: Colors.white, fontSize: 28),
                   ),
                 ),
                 Positioned(
@@ -84,7 +84,7 @@ class MyCard extends StatelessWidget {
                   left: 30,
                   child: Text(
                     "Igreja de Nossa Senhora\n\ndos Remédios-Arraias",
-                    style: TextStyle(color: Colors.white, fontSize: 35),
+                    style: TextStyle(color: Colors.white, fontSize: 30),
                   ),
                 ),
                 Positioned(
@@ -138,7 +138,7 @@ class MyCard extends StatelessWidget {
                       left: 30,
                       child: Text(
                         "Catedral Nossa Senhora Das\n\nMerces - Porto Nacional",
-                        style: TextStyle(color: Colors.white, fontSize: 35),
+                        style: TextStyle(color: Colors.white, fontSize: 30),
                       ),
                     ),
                     Positioned(
@@ -192,8 +192,8 @@ class MyCard extends StatelessWidget {
                       bottom: 250,
                       left: 30,
                       child: Text(
-                        "Igreja de Nossa Senhora\n\ndos Remédios-Arraias",
-                        style: TextStyle(color: Colors.white, fontSize: 35),
+                        "Igreja de Nossa Senhora\n\ndos Remédios - Arraias",
+                        style: TextStyle(color: Colors.white, fontSize: 30),
                       ),
                     ),
                     Positioned(

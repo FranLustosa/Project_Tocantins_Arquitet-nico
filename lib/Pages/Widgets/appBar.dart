@@ -167,13 +167,7 @@ class _AppBarInferiorState extends State<AppBarInferior> {
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Blog",
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
+
                     // IconButton(
                     //   onPressed: () {},
                     //   icon: Icon(

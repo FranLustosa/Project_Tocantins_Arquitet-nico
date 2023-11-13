@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/card_home_page.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/footer.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/appBar.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/carroussel_home_page.dart';
 
@@ -24,7 +25,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
             Wrap(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 100),
+                  margin: EdgeInsets.symmetric(horizontal: 20),
                   height: 150,
                   child: Center(
                     child: Row(
@@ -48,7 +49,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
               child: Wrap(
                 children: [
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 200),
+                    margin: EdgeInsets.symmetric(horizontal: 20),
                     child: Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -67,7 +68,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                   ),
                   SizedBox(height: 20), // Espaço entre o título e o texto
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 120),
+                    margin: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                     padding: EdgeInsets.all(
                         20), // Adiciona padding ao redor do texto
                     width: MediaQuery.of(context).size.width,
@@ -80,7 +81,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                             style: TextStyle(
                                 color: Colors.black,
                                 fontFamily: 'Jost',
-                                fontSize: 25),
+                                fontSize: 24),
                           ),
                         ],
                       ),
@@ -89,29 +90,31 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
                 ],
               ),
             ),
-            Wrap(
-              children: [
-                Container(
-                  margin: EdgeInsets.symmetric(horizontal: 120),
-                  height: 200,
-                  child: Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          "NOSSO BLOG",
-                          style: TextStyle(
-                            fontSize:
-                                MediaQuery.of(context).size.width * 0.0225,
-                            color: Color.fromRGBO(130, 104, 20, 0.8),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
+            SizedBox(height: 40),
+            MyFotter(),
+            // Wrap(
+            //   children: [
+            //     Container(
+            //       margin: EdgeInsets.symmetric(horizontal: 120),
+            //       height: 200,
+            //       child: Center(
+            //         child: Row(
+            //           mainAxisAlignment: MainAxisAlignment.start,
+            //           children: [
+            //             Text(
+            //               "NOSSO BLOG",
+            //               style: TextStyle(
+            //                 fontSize:
+            //                     MediaQuery.of(context).size.width * 0.0225,
+            //                 color: Color.fromRGBO(130, 104, 20, 0.8),
+            //               ),
+            //             )
+            //           ],
+            //         ),
+            //       ),
+            //     ),
+            //   ],
+            // ),
           ],
         ));
   }

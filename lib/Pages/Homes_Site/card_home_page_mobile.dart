@@ -264,7 +264,8 @@ class MyCardMobile extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: constraints.maxWidth * 0.1),
+                    horizontal: constraints.maxWidth * 0.1,
+                    vertical: constraints.maxWidth * 0.1),
                 child: TextButton(
                   style: ButtonStyle(
                     fixedSize: MaterialStateProperty.all<Size>(
@@ -281,7 +282,7 @@ class MyCardMobile extends StatelessWidget {
                     side: MaterialStateProperty.all<BorderSide>(
                       BorderSide(
                         color: Color.fromRGBO(130, 104, 20, 1),
-                        width: 2.0,
+                        width: 1.5,
                       ),
                     ),
                   ),
