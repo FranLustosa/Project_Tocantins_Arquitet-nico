@@ -31,7 +31,7 @@ class _BasePageState extends State<BasePageCatedral> {
       body: SingleChildScrollView(
         child: Wrap(
           // mainAxisAlignment: MainAxisAlignment.center,
-          alignment: WrapAlignment.center,
+          alignment: WrapAlignment.spaceEvenly,
           children: [
             Container(
               color: Colors.transparent,
@@ -48,32 +48,35 @@ class _BasePageState extends State<BasePageCatedral> {
                     ],
                   ),
                   // SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 190,
-                      ),
-                      IconButton(
-                        iconSize: 40,
-                        onPressed: () {
-                          if (ModalRoute.of(context)?.settings.name != "/") {
-                            Navigator.of(context).pushNamed("/");
-                          }
-                        },
-                        icon: Icon(
-                          Icons.arrow_circle_left_outlined,
-                          color: Color.fromRGBO(210, 177, 66, 1),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 190,
                         ),
-                      ),
-                      Text(
-                        "Igreja de Nossa Senhora do Carmo - Monte Carmo,Tocantins",
-                        style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: "Jost",
+                        IconButton(
+                          iconSize: 40,
+                          onPressed: () {
+                            if (ModalRoute.of(context)?.settings.name != "/") {
+                              Navigator.of(context).pushNamed("/");
+                            }
+                          },
+                          icon: Icon(
+                            Icons.arrow_circle_left_outlined,
+                            color: Color.fromRGBO(210, 177, 66, 1),
+                          ),
                         ),
-                      ),
-                    ],
+                        Text(
+                          "Igreja de Nossa Senhora do Carmo - Monte Carmo,Tocantins",
+                          style: TextStyle(
+                            fontSize: 28,
+                            fontFamily: "Jost",
+                          ),
+                        ),
+                      ],
+                    ),
                   )
                 ],
               ),

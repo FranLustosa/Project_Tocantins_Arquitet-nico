@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/footer_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer_mobile.dart';
 
 import '../Widgets/carroussel_home_page.dart';
-import 'card_home_page_mobile.dart';
+import '../Widgets/card_home_page_mobile.dart';
 
 class MyMobileBody extends StatefulWidget {
   const MyMobileBody({Key? key}) : super(key: key);
@@ -74,18 +74,6 @@ class _MyMobileBodyState extends State<MyMobileBody> {
             ),
             SizedBox(
               height: 10,
-            ),
-            ListTile(
-              title: Text(
-                'Blog',
-                style: TextStyle(
-                  color: Color.fromRGBO(93, 76, 22, 1),
-                  fontSize: 18,
-                ),
-              ),
-              onTap: () {
-                // Implementação para a opção "Blog"
-              },
             ),
           ],
         ),
@@ -162,7 +150,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
   void _scrollToSection() {
     _scrollController.animateTo(
       MediaQuery.of(context).size.width * 0.04, // Substitua pelo valor desejado
-      duration: Duration(milliseconds: 1000),
+      duration: Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
   }
