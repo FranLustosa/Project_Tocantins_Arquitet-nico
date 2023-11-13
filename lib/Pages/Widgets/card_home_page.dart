@@ -251,7 +251,7 @@ class MyCard extends StatelessWidget {
                     child: Text(
                       "Ver mais patrimônios",
                       style: TextStyle(
-                        color: Color.fromRGBO(166, 147, 85, 1),
+                        color: Color.fromRGBO(130, 104, 20, 1),
                         fontSize: 20,
                       ),
                     ),

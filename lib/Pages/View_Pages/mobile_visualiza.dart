@@ -185,6 +185,9 @@ class _BasePageState extends State<MyMobileVisualiza> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 40,
+            ),
             MyFooterMobile(),
           ],
         ),
