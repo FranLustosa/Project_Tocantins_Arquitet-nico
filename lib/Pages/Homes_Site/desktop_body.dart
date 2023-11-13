@@ -48,7 +48,7 @@ class _MyDesktopBodyState extends State<MyDesktopBody> {
               child: Wrap(
                 children: [
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 120),
+                    margin: EdgeInsets.symmetric(horizontal: 200),
                     child: Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,

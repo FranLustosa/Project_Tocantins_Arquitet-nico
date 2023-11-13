@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
       body: ResponsiveLayout(
         mobileBody: MyMobileBody(),
         desktopBody: MyDesktopBody(),
-        mobileBodyPage: MyMobileVisualiza(),
+        //mobileBodyPage: MyMobileVisualiza(),
       ),
     );
   }

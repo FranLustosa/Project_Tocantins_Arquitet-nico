@@ -14,7 +14,7 @@ class MyCard extends StatelessWidget {
             Stack(
               children: [
                 FractionallySizedBox(
-                  widthFactor: 0.3,
+                  widthFactor: 0.4,
                   child: Container(
                     margin: EdgeInsets.only(right: 10, top: 25),
                     height: 450,
@@ -67,7 +67,7 @@ class MyCard extends StatelessWidget {
             Stack(
               children: [
                 FractionallySizedBox(
-                  widthFactor: 0.5,
+                  widthFactor: 0.6,
                   child: Container(
                     margin: EdgeInsets.only(left: 10, top: 25),
                     height: 450,
@@ -223,11 +223,9 @@ class MyCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
                   child: TextButton(
                     style: ButtonStyle(
                       fixedSize: MaterialStateProperty.all<Size>(
@@ -243,7 +241,7 @@ class MyCard extends StatelessWidget {
                       side: MaterialStateProperty.all<BorderSide>(
                         BorderSide(
                           color: Color.fromRGBO(130, 104, 20, 1),
-                          width: 2.0,
+                          width: 1.5,
                         ),
                       ),
                     ),
