@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:project_tocantins_arquitetonico/Pages/View_Pages/desktop_visualiza.dart';
-import 'package:project_tocantins_arquitetonico/Pages/View_Pages/mobile_visualiza.dart';
-import 'homepage.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_desktop.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_mobile.dart';
+
+import 'Pages/Homes_Site/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        "/mobilevisualiza": (context) => MyMobileVisualiza(),
-        "/desktopvisualiza": (context) => BasePageCatedral(),
+        "/mobilevisualiza": (context) => MyMobileBody2(),
+        "/desktopvisualiza": (context) => MyDesktopBody2(),
       },
       home: HomePage(),
     );

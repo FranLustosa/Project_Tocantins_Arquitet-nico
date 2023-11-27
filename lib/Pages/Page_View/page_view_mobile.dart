@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer_mobile.dart';
+import '../Widgets/carroussel_home_page.dart';
+import '../Widgets/card_home_page_mobile.dart';
 
-class MyMobileVisualiza extends StatefulWidget {
-  const MyMobileVisualiza({Key? key}) : super(key: key);
+class MyMobileBody2 extends StatefulWidget {
+  const MyMobileBody2({Key? key}) : super(key: key);
 
   @override
-  State<MyMobileVisualiza> createState() => _BasePageState();
+  _MyMobileBody2State createState() => _MyMobileBody2State();
 }
 
-class _BasePageState extends State<MyMobileVisualiza> {
+class _MyMobileBody2State extends State<MyMobileBody2> {
+  final ScrollController _scrollController = ScrollController();
   ImageProvider imagem_catedral_logotipo =
       AssetImage("lib/assets/img/cards/Catedral.png");
 
