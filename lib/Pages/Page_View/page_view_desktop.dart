@@ -69,11 +69,16 @@ class _MyDesktopBody2State extends State<MyDesktopBody2> {
                             color: Color.fromRGBO(210, 177, 66, 1),
                           ),
                         ),
-                        Text(
-                          "Igreja de Nossa Senhora do Carmo - Monte Carmo,Tocantins",
-                          style: TextStyle(
-                            fontSize: 28,
-                            fontFamily: "Jost",
+                        Container(
+                          child: Expanded(
+                            child: Text(
+                              "Igreja de Nossa Senhora do Carmo - Monte Carmo,Tocantins",
+                              softWrap: true,
+                              style: TextStyle(
+                                fontSize: 28,
+                                fontFamily: "Jost",
+                              ),
+                            ),
                           ),
                         ),
                       ],

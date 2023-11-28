@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/desktop_body.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/mobile_body.dart';
@@ -27,19 +30,17 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        if (constraints.maxWidth <= mobileWidth) {
+        if (constraints.maxWidth < desktopWidth) {
           return mobileBody;
-        } else if (constraints.maxWidth <= mobileWidth2) {
+        } else if (constraints.maxWidth < desktopWidth2) {
           return mobileBody2;
-        } else if (constraints.maxWidth > desktopWidth) {
+        } else if (constraints.maxWidth > mobileWidth2) {
           return desktopBody;
         } else {
           if (constraints.maxWidth > mobileWidth2) {
             return desktopBody2;
-          } else if (constraints.maxWidth > mobileWidth2) {
-            return desktopBody2;
           } else {
-            return desktopBody; // Default to desktopBody for larger widths
+            return desktopBody2; // Default to desktopBody for larger widths
           }
         }
       },

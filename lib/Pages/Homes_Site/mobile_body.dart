@@ -149,7 +149,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
   // Método para rolar para a seção "Quem Somos"
   void _scrollToSection() {
     _scrollController.animateTo(
-      MediaQuery.of(context).size.width * 0.04, // Substitua pelo valor desejado
+      MediaQuery.of(context).size.height * 1, // Substitua pelo valor desejado
       duration: Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
