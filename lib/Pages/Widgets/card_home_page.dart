@@ -52,7 +52,7 @@ class MyCard extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.of(context).pushNamed("/desktopvisualiza");
+                      Navigator.of(context).pushNamed("/desktopvisualiza2");
                     },
                     child: Text(
                       "Conhecer mais",
@@ -104,7 +104,9 @@ class MyCard extends StatelessWidget {
                         Color.fromRGBO(130, 104, 20, 1),
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed("/desktopvisualiza3");
+                    },
                     child: Text(
                       "Conhecer mais",
                       style: TextStyle(color: Colors.white, fontSize: 16),
