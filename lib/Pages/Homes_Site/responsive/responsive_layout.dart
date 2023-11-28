@@ -34,14 +34,8 @@ class ResponsiveLayout extends StatelessWidget {
           return mobileBody;
         } else if (constraints.maxWidth < desktopWidth2) {
           return mobileBody2;
-        } else if (constraints.maxWidth > mobileWidth2) {
-          return desktopBody;
         } else {
-          if (constraints.maxWidth > mobileWidth2) {
-            return desktopBody2;
-          } else {
-            return desktopBody2; // Default to desktopBody for larger widths
-          }
+          return desktopBody;
         }
       },
     );

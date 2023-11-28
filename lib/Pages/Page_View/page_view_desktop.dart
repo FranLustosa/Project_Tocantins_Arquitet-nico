@@ -32,11 +32,11 @@ class _MyDesktopBody2State extends State<MyDesktopBody2> {
       body: SingleChildScrollView(
         child: Wrap(
           // mainAxisAlignment: MainAxisAlignment.center,
-          alignment: WrapAlignment.spaceEvenly,
+          alignment: WrapAlignment.start,
           children: [
             Container(
               color: Colors.transparent,
-              height: 130,
+              height: 200,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -52,10 +52,10 @@ class _MyDesktopBody2State extends State<MyDesktopBody2> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Container(
-                          width: 190,
+                          width: 100,
                         ),
                         IconButton(
                           iconSize: 40,
@@ -171,25 +171,15 @@ class _MyDesktopBody2State extends State<MyDesktopBody2> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10),
-                  Text(
-                    "Metodologia",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: "Jost",
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    """Metodologia
-Considerando a sua notável importância no seio da comunidade local, a Igreja de Nossa Senhora do Carmo adquiriu uma significativa relevância como um valioso patrimônio cultural do Estado do Tocantins, sendo devidamente reconhecida e classificada como um Bem Cultural. 
-
-O cerne da investigação residiu na realização de pesquisas bibliográficas on-line, bem como no acesso ao parecer de tombamento da igreja, disponibilizado pelo Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN). A utilização desse dossiê, representou uma contribuição fundamental para o estudo, fornecendo informações minuciosas sobre o valor patrimonial da igreja. 
-
-Além disso, a pesquisa por meio do estudo virtual, permitiu conduzir uma análise meticulosa, resultando em uma narrativa coesa e fundamentada que abrange a trajetória da igreja, seus aspectos arquitetônicos e sua influência na comunidade local. Portanto, a combinação desses métodos de pesquisa revelou-se abrangente e essencial para a compreensão completa da história e do significado da Igreja de Nossa Senhora do Carmo.""",
-                    style: TextStyle(
-                      fontFamily: "Jost",
-                      fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Text(
+                      """A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil".\n\nEntre suas joias mais preciosas, está a majestosa Igreja de Nossa Senhora do Carmo, uma construção que remonta a 1801 e que se tornou um ícone arquitetônico da religiosidade e da tradição da região. Esta igreja, situada na Praça da Matriz, transcende sua função religiosa para se tornar um epicentro de manifestações culturais e espirituais que permeiam a vida da comunidade local. Com raízes na influência colonial da época, a arquitetura da Igreja de Nossa Senhora do Carmo evoca a grandiosidade das igrejas mineiras “construídas antes do advento do modernismo” (IPATRIMÔNIO, s/d).\n\nCom mais de dois séculos de história, ela se tornou um símbolo de orgulho e um farol espiritual para os habitantes locais, abrigando diversas celebrações religiosas, como a Festa do Divino Espírito Santo e a veneração de sua padroeira, Nossa Senhora do Carmo.\n\nA importância histórica e cultural da Igreja de Nossa Senhora do Carmo transcende a sua relevância arquitetônica e religiosa. Em 25 de setembro de 2012, esse notável monumento foi oficialmente reconhecido e inscrito como Patrimônio Cultural do Estado do Tocantins, conforme trecho abaixo do Diário Oficial:\n\nA SECRETARIA DA CULTURA DO ESTADO DO TOCANTINS, com base nos elementos contidos nos autos do processo nº 2012 5301 000028 e fundamentada no inciso III, do artigo 2º, da Lei nº 577, de 24 de agosto de 1993, TORNA PÚBLICO o tombamento da IGREJA NOSSA SENHORA DO CARMO, localizada na Praça da Matriz, no município de Monte do Carmo, Estado do Tocantins, cujo ato foi inscrito em 25/09/2012, no Livro do Tombo Histórico e Etnológico e Livro do Tombo Arquitetônico, ocasionando valor histórico, arquitetônico e cultural ao referido bem.\n\nEssa significativa ação foi promovida pela Secretaria de Estado da Cultura (Secult), evidenciando o compromisso de proteger, preservar e conservar esse tesouro patrimonial tocantinense, realçando ainda mais seu valor histórico, arquitetônico e cultural. Neste contexto, torna-se evidente a relevância da preservação deste notável símbolo material, que transcende sua mera estrutura física e se entrelaça com a identidade cultural e espiritual da comunidade há gerações (IPATRIMÔNIO, s/d).
+                          """,
+                      style: TextStyle(
+                        fontFamily: "Jost",
+                        fontSize: 20,
+                      ),
                     ),
                   )
                 ],
@@ -204,81 +194,15 @@ Além disso, a pesquisa por meio do estudo virtual, permitiu conduzir uma análi
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10),
-                  Text(
-                    "Resultados e Discussão",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: "Jost",
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    """Após todas as pesquisas e discussões feitas sobre a edificação da Igreja Nossa Senhora do Carmo, foi possível chegar aos resultados de que se trata de um legítimo exemplar da época colonial com grandes valores culturais, arquitetônicos e históricos para o município de Monte do Carmo e para o Estado do Tocantins. 
-
-Com base nisto, é notório que o seu processo de tombamento foi de suma importância para a preservação da igreja, junto com sua história e cultura; além de compreender a sua relação com a cidade de Monte do Carmo e com o “Ciclo do Ouro”. 
-
-A história oral, contada e passada pelos habitantes da cidade, ajudaram a entender a importância da sua carga simbólica e significativa para a região, contribuindo ainda mais para a riqueza de patrimônios materiais no Estado.
-""",
-                    style: TextStyle(
-                      fontFamily: "Jost",
-                      fontSize: 20,
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 120),
-              width: 1500,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(239, 235, 221, 1),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 10),
-                  Text(
-                    "Conclusão",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: "Jost",
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    """Com base nos tópicos supracitados, é perceptível que a Igreja de Nossa Senhora do Carmo é um Patrimônio Material devido a sua grande importância para cidade de Monte do Carmo e para o Tocantins, proporcionando a população local e aos visitantes, o conhecimento sobre a história e a cultura transmitida pela edificação. Dessarte, a preservação desta edificação histórica, proporciona e o sentimento de pertencimento da população local e protege a edificação para que futuras gerações tenham referência de preservação da memória da igreja, além de viabilizar a atração turística, valorizando a economia e a visibilidade local.""",
-                    style: TextStyle(
-                      fontFamily: "Jost",
-                      fontSize: 20,
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 120),
-              width: 1500,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(239, 235, 221, 1),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 10),
-                  Text(
-                    "Bibliografia",
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: "Jost",
-                    ),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    """IPATRIMÔNIO. Monte do Carmo – Igreja de Nossa Senhora do Rosário. S/d. Disponível em: <https://www.ipatrimonio.org/monte-do-carmo-igreja-de-nossa-senhora-do-rosario/#!/map=38329>. Acesso em: 16 de set. de 2023. SANTANA, Jocyelma. Igreja de Monte do Carmo recebe pesquisadores da Secult. Governo do Tocantins, Tocantins, 14 de maio de 2012. Disponível em: <https://www.to.gov.br/pge/noticias /igreja-de-monte-do-carmo-recebe-pesquisadores-da-secult/15jtq 7oy9jl3>. Acesso em: 16 de set. de 2023. TOCANTINS. Secretaria da Cultura do Estado do Tocantins. Diário Oficial do Estado do Tocantins: Poder Executivo, Palmas, ano 21, nº 3.722, p.21, 26 de setembro de 2012.""",
-                    style: TextStyle(
-                      fontFamily: "Jost",
-                      fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Text(
+                      """A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil".\n\nEntre suas joias mais preciosas, está a majestosa Igreja de Nossa Senhora do Carmo, uma construção que remonta a 1801 e que se tornou um ícone arquitetônico da religiosidade e da tradição da região. Esta igreja, situada na Praça da Matriz, transcende sua função religiosa para se tornar um epicentro de manifestações culturais e espirituais que permeiam a vida da comunidade local. Com raízes na influência colonial da época, a arquitetura da Igreja de Nossa Senhora do Carmo evoca a grandiosidade das igrejas mineiras “construídas antes do advento do modernismo” (IPATRIMÔNIO, s/d).\n\nCom mais de dois séculos de história, ela se tornou um símbolo de orgulho e um farol espiritual para os habitantes locais, abrigando diversas celebrações religiosas, como a Festa do Divino Espírito Santo e a veneração de sua padroeira, Nossa Senhora do Carmo.\n\nA importância histórica e cultural da Igreja de Nossa Senhora do Carmo transcende a sua relevância arquitetônica e religiosa. Em 25 de setembro de 2012, esse notável monumento foi oficialmente reconhecido e inscrito como Patrimônio Cultural do Estado do Tocantins, conforme trecho abaixo do Diário Oficial:\n\nA SECRETARIA DA CULTURA DO ESTADO DO TOCANTINS, com base nos elementos contidos nos autos do processo nº 2012 5301 000028 e fundamentada no inciso III, do artigo 2º, da Lei nº 577, de 24 de agosto de 1993, TORNA PÚBLICO o tombamento da IGREJA NOSSA SENHORA DO CARMO, localizada na Praça da Matriz, no município de Monte do Carmo, Estado do Tocantins, cujo ato foi inscrito em 25/09/2012, no Livro do Tombo Histórico e Etnológico e Livro do Tombo Arquitetônico, ocasionando valor histórico, arquitetônico e cultural ao referido bem.\n\nEssa significativa ação foi promovida pela Secretaria de Estado da Cultura (Secult), evidenciando o compromisso de proteger, preservar e conservar esse tesouro patrimonial tocantinense, realçando ainda mais seu valor histórico, arquitetônico e cultural. Neste contexto, torna-se evidente a relevância da preservação deste notável símbolo material, que transcende sua mera estrutura física e se entrelaça com a identidade cultural e espiritual da comunidade há gerações (IPATRIMÔNIO, s/d).
+                          """,
+                      style: TextStyle(
+                        fontFamily: "Jost",
+                        fontSize: 20,
+                      ),
                     ),
                   )
                 ],
@@ -287,8 +211,8 @@ A história oral, contada e passada pelos habitantes da cidade, ajudaram a enten
             Wrap(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 208),
-                  height: 200,
+                  margin: EdgeInsets.symmetric(horizontal: 120),
+                  height: 150,
                   child: Center(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
