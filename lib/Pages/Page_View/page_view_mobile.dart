@@ -32,6 +32,7 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
       drawer: Drawer(
         shadowColor: Color.fromRGBO(125, 100, 18, 1),
         child: ListView(
+          controller: _scrollController,
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
@@ -42,38 +43,41 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                 height: 200,
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
             ListTile(
               title: Text(
                 'Patrimônios',
                 style: TextStyle(
                   color: Color.fromRGBO(93, 76, 22, 1),
+                  fontSize: 18,
                 ),
               ),
               onTap: () {
                 // Implementação para a opção "Patrimônios"
               },
             ),
+            SizedBox(
+              height: 10,
+            ),
             ListTile(
               title: Text(
                 'Quem Somos',
                 style: TextStyle(
                   color: Color.fromRGBO(93, 76, 22, 1),
+                  fontSize: 18,
                 ),
               ),
               onTap: () {
-                // Implementação para a opção "Quem Somos"
+                // Fecha o Drawer
+                Navigator.of(context).pop();
+                // Rola para a seção "Quem Somos"
+                _scrollToSection();
               },
             ),
-            ListTile(
-              title: Text(
-                'Blog',
-                style: TextStyle(
-                  color: Color.fromRGBO(93, 76, 22, 1),
-                ),
-              ),
-              onTap: () {
-                // Implementação para a opção "Blog"
-              },
+            SizedBox(
+              height: 10,
             ),
           ],
         ),
@@ -195,6 +199,15 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
           ],
         ),
       ),
+    );
+  }
+
+  // Método para rolar para a seção "Quem Somos"
+  void _scrollToSection() {
+    _scrollController.animateTo(
+      MediaQuery.of(context).size.height * 1, // Substitua pelo valor desejado
+      duration: Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
     );
   }
 }
