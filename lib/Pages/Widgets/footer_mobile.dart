@@ -28,7 +28,7 @@ class FotterSuperior extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 151,
+      height: 140,
       color: Color.fromRGBO(125, 100, 18, 1),
       child: Row(
         children: [
@@ -80,7 +80,7 @@ class FotterSuperior extends StatelessWidget {
                         width: 40,
                       ),
                       Text(
-                        "Engenharia de Software;\nArquitetura e Urbanismo",
+                        "Engenharia de Software e \nArquitetura e Urbanismo",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Jost",
@@ -105,7 +105,7 @@ class FotterInferior2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 151,
+      height: 140,
       color: Color.fromRGBO(125, 100, 18, 1),
       child: Row(
         children: [
@@ -140,9 +140,9 @@ class FotterInferior2 extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(2),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Image.asset(
                         'lib/assets/img/logo/dart.png',
@@ -183,7 +183,7 @@ class FotterInferior extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "© 2023 tocantinsarquitetonico.com.br - fábrica de software unicatólica",
+              "© 2023 tocantinsarquitetonico.com.br - Fábrica de Software Unicatólica",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 12,
