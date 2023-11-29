@@ -248,7 +248,7 @@ class MyCard extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.of(context).pushNamed("/patrimonios");
+                      Navigator.of(context).pushNamed("/listapatrimonios");
                     },
                     child: Text(
                       "Ver mais patrimônios",

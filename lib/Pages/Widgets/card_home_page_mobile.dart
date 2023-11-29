@@ -96,7 +96,7 @@ class MyCardMobile extends StatelessWidget {
                         bottom: constraints.maxWidth * 0.3,
                         left: 30,
                         child: Text(
-                          "Catedral Nossa Senhora Das\n\nMerces - Porto Nacional",
+                          "Igreja Catedral Nossa Senhora da\n\nConsolação - Tocantinópolis",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: constraints.maxWidth * 0.05,
@@ -123,7 +123,8 @@ class MyCardMobile extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.of(context).pushNamed("/catedral");
+                            Navigator.of(context)
+                                .pushNamed("/mobilevisualiza3");
                           },
                           child: Text(
                             "Conhecer mais",
@@ -146,7 +147,7 @@ class MyCardMobile extends StatelessWidget {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage(
-                                  "lib/assets/img/cards/Catedral.png"),
+                                  "lib/assets/img/cards/OldHouse.png"),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -156,7 +157,7 @@ class MyCardMobile extends StatelessWidget {
                         bottom: constraints.maxWidth * 0.3,
                         left: 30,
                         child: Text(
-                          "Catedral Nossa Senhora Das\n\nMerces - Porto Nacional",
+                          "Casa Vitor - O Museu\n\nHistórico de Taquaruçu",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: constraints.maxWidth * 0.06,
@@ -205,8 +206,8 @@ class MyCardMobile extends StatelessWidget {
                           height: constraints.maxWidth * 0.6,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage(
-                                  "lib/assets/img/cards/Catedral.png"),
+                              image:
+                                  AssetImage("lib/assets/img/cards/Museu.png"),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -216,10 +217,10 @@ class MyCardMobile extends StatelessWidget {
                         bottom: constraints.maxWidth * 0.3,
                         left: 30,
                         child: Text(
-                          "Catedral Nossa Senhora Das\n\nMerces - Porto Nacional",
+                          "Museu Histórico do Estado do\n\nTocantins e da Fundação Cultural",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: constraints.maxWidth * 0.06,
+                            fontSize: constraints.maxWidth * 0.058,
                           ),
                         ),
                       ),
@@ -287,7 +288,7 @@ class MyCardMobile extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.of(context).pushNamed("/patrimonios");
+                    Navigator.of(context).pushNamed("/listapatrimoniosmobile");
                   },
                   child: Text(
                     "Ver mais patrimônios",

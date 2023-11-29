@@ -38,7 +38,7 @@ class FotterSuperior extends StatelessWidget {
                   Image.asset("lib/assets/img/logo/LogoAppBarArquitetura.png"),
               title: Text(
                 "TOCANTINS\nARQUITETÔNICO",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.white, fontSize: 13),
               ),
             ),
           ),
@@ -59,7 +59,7 @@ class FotterSuperior extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Jost",
-                          fontSize: 18,
+                          fontSize: 16,
                         ),
                       )
                     ],
@@ -75,6 +75,7 @@ class FotterSuperior extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Jost",
+                          fontSize: 12,
                         ),
                       )
                     ],

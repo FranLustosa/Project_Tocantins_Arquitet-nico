@@ -22,7 +22,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
         backgroundColor: Color.fromRGBO(125, 100, 18, 1),
         title: Text(
           "TOCANTINS ARQUITETÔNICO",
-          style: TextStyle(fontSize: 18),
+          style: TextStyle(fontSize: 16),
         ),
       ),
       drawer: Drawer(
@@ -51,7 +51,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
                 ),
               ),
               onTap: () {
-                // Implementação para a opção "Patrimônios"
+                Navigator.of(context).pushNamed("/listapatrimoniosmobile");
               },
             ),
             SizedBox(
@@ -149,7 +149,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
   // Método para rolar para a seção "Quem Somos"
   void _scrollToSection() {
     _scrollController.animateTo(
-      MediaQuery.of(context).size.height * 1, // Substitua pelo valor desejado
+      MediaQuery.of(context).size.height * 2, // Substitua pelo valor desejado
       duration: Duration(milliseconds: 500),
       curve: Curves.easeInOut,
     );
