@@ -68,7 +68,7 @@ class _MyCarrousselState extends State<MyCarroussel> {
     return Column(
       children: [
         Container(
-          height: MediaQuery.of(context).size.width * 0.4,
+          height: MediaQuery.of(context).size.width * 0.35,
           child: PageView.builder(
             itemCount: lista_de_imagens.length,
             controller: _pageController,
@@ -112,8 +112,8 @@ class _MyCarrousselState extends State<MyCarroussel> {
                               entry.key), // Quando um ponto indicador é tocado
                           child: Container(
                             //adicionar media query
-                            width: 25.3,
-                            height: 25.3,
+                            width: 20,
+                            height: 20,
                             margin: EdgeInsets.symmetric(
                                 vertical: 25.0, horizontal: 7.85),
                             decoration: BoxDecoration(

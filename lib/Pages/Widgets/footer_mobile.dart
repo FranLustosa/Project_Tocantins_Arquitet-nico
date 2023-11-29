@@ -17,6 +17,7 @@ class _MyFooterMobileState extends State<MyFooterMobile> {
     return Column(
       children: [
         FotterSuperior(),
+        FotterInferior2(),
         FotterInferior(),
       ],
     );
@@ -54,6 +55,14 @@ class FotterSuperior extends StatelessWidget {
                       SizedBox(
                         width: 40,
                       ),
+                      Icon(
+                        Icons.handshake_outlined,
+                        color: Colors.white,
+                        size: 20,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
                       Text(
                         "Parceiros",
                         style: TextStyle(
@@ -71,7 +80,7 @@ class FotterSuperior extends StatelessWidget {
                         width: 40,
                       ),
                       Text(
-                        "Engneharia de Software;\nArquitetura e Urbanismo",
+                        "Engenharia de Software;\nArquitetura e Urbanismo",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Jost",
@@ -84,46 +93,74 @@ class FotterSuperior extends StatelessWidget {
               ),
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
 
-          // Expanded(
-          //   child: Container(
-          //     color: Color.fromRGBO(125, 100, 18, 1),
-          //     child: Column(
-          //       mainAxisAlignment: MainAxisAlignment.center,
-          //       children: [
-          //         Row(
-          //           mainAxisAlignment: MainAxisAlignment.center,
-          //           children: [
-          //             Icon(
-          //               Icons.phone_outlined,
-          //               color: Colors.white,
-          //               size: 30,
-          //             ),
-          //             SizedBox(width: 20),
-          //             Text(
-          //               "Telefone",
-          //               style: TextStyle(
-          //                 color: Colors.white,
-          //                 fontFamily: "Jost",
-          //                 fontSize: 23,
-          //                 // fontWeight: FontWeight.bold,
-          //               ),
-          //             )
-          //           ],
-          //         ),
-          // SizedBox(height: 8),
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: [
-          //     SizedBox(width: 80),
-          //     Text(
-          //       "(63) 4002 - 8922",
-          //       style: TextStyle(
-          //         color: Colors.white,
-          //       ),
-          //     ),
-          //   ],
-          // )
+class FotterInferior2 extends StatelessWidget {
+  const FotterInferior2({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 151,
+      color: Color.fromRGBO(125, 100, 18, 1),
+      child: Row(
+        children: [
+          SizedBox(width: 10),
+          Expanded(
+              child: Container(
+            color: Color.fromRGBO(125, 100, 18, 1),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Icon(
+                      Icons.workspace_premium_outlined,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      "Certificação do site",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: "Jost",
+                        fontSize: 16,
+                      ),
+                    )
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Image.asset(
+                        'lib/assets/img/logo/dart.png',
+                        width: 50,
+                        height: 50,
+                      ),
+                      SizedBox(width: 10),
+                      Image.asset(
+                        'lib/assets/img/logo/flutter.png',
+                        width: 50,
+                        height: 50,
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ))
         ],
       ),
     );

@@ -47,34 +47,21 @@ class FotterSuperior extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(height: 10),
-                  // Row(
-                  //   children: [
-                  //     Icon(
-                  //       FontAwesomeIcons.clock,
-                  //       color: Colors.white,
-                  //     ),
-                  //     SizedBox(width: 20),
-                  //     Text(
-                  //       "Horário de atendimento",
-                  //       style: TextStyle(
-                  //           color: Colors.white,
-                  //           fontSize: 25,
-                  //           fontWeight: FontWeight.bold),
-                  //     )
-                  //   ],
-                  // ),
-                  SizedBox(height: 10),
                   Row(
                     children: [
+                      Icon(
+                        Icons.handshake_outlined,
+                        color: Colors.white,
+                      ),
                       SizedBox(
-                        width: 45,
+                        width: 10,
                       ),
                       Text(
-                        "De segunda à sexta-feira",
+                        "Parceiros",
                         style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Jost",
-                        ),
+                            color: Colors.white,
+                            fontFamily: "Jost",
+                            fontSize: 20),
                       )
                     ],
                   ),
@@ -82,10 +69,10 @@ class FotterSuperior extends StatelessWidget {
                   Row(
                     children: [
                       SizedBox(
-                        width: 45,
+                        width: 33,
                       ),
                       Text(
-                        "das 09:00 as 12:00 e das 14:00 às 18:00",
+                        "Engenharia de Software e Arquitetura e Urbanismo",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Jost",
@@ -98,48 +85,53 @@ class FotterSuperior extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Container(
-              color: Color.fromRGBO(125, 100, 18, 1),
-              child: Column(
+              child: Container(
+            color: Color.fromRGBO(125, 100, 18, 1),
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: 10),
+                  Icon(
+                    Icons.workspace_premium_outlined,
+                    color: Colors.white,
+                  ),
+                  SizedBox(width: 10),
+                  Text(
+                    "Certificação do site",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontFamily: "Jost",
+                      fontSize: 20,
+                      // fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ],
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.phone_outlined,
-                        color: Colors.white,
-                        size: 30,
+                      Image.asset(
+                        'lib/assets/img/logo/dart.png',
+                        width: 50,
+                        height: 50,
                       ),
-                      SizedBox(width: 20),
-                      Text(
-                        "Telefone",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Jost",
-                          fontSize: 23,
-                          // fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 8),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(width: 80),
-                      Text(
-                        "(63) 4002 - 8922",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                      SizedBox(width: 10),
+                      Image.asset(
+                        'lib/assets/img/logo/flutter.png',
+                        width: 50,
+                        height: 50,
                       ),
                     ],
                   )
                 ],
               ),
-            ),
-          )
+            ]),
+          ))
         ],
       ),
     );
@@ -153,7 +145,7 @@ class FotterInferior extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 54,
-      width: 1100,
+      width: 2000,
       color: Color.fromRGBO(93, 76, 22, 1),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -162,7 +154,7 @@ class FotterInferior extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              "© 2023 tocantinsarquitetonico.com.br - fábrica de software unicatólica",
+              "© 2023 tocantinsarquitetonico.com.br - Fábrica de Software Unicatólica",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 12,
