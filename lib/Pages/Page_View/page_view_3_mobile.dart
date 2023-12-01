@@ -3,23 +3,23 @@ import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer_mobile.dart
 import '../Widgets/carroussel_home_page.dart';
 import '../Widgets/card_home_page_mobile.dart';
 
-class MyMobileBody2 extends StatefulWidget {
-  const MyMobileBody2({Key? key}) : super(key: key);
+class MyMobileBody3 extends StatefulWidget {
+  const MyMobileBody3({Key? key}) : super(key: key);
 
   @override
-  _MyMobileBody2State createState() => _MyMobileBody2State();
+  _MyMobileBody3State createState() => _MyMobileBody3State();
 }
 
-class _MyMobileBody2State extends State<MyMobileBody2> {
+class _MyMobileBody3State extends State<MyMobileBody3> {
   final ScrollController _scrollController = ScrollController();
-  ImageProvider imagem_catedral_logotipo =
-      AssetImage("lib/assets/img/cards/Catedral.png");
+  ImageProvider imagem_igreja_logotipo =
+      AssetImage("lib/assets/img/cards/Igreja.png");
 
-  ImageProvider imagem_catedral1 = AssetImage(
-      "lib/assets/img/base_page/Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins 2.png");
+  ImageProvider imagem_igreja3 = AssetImage(
+      "lib/assets/img/base_page/IgrejaCatedralNossaSenhoradaConsolação.png");
 
-  ImageProvider imagem_catedral2 = AssetImage(
-      "lib/assets/img/base_page/Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins 3.png");
+  ImageProvider imagem_igreja2 = AssetImage(
+      "lib/assets/img/base_page/Igreja Catedral Nossa Senhora da Consolação - Tocantinópolis, TO.png");
 
   @override
   Widget build(BuildContext context) {
@@ -130,7 +130,7 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                     height: 200,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: imagem_catedral_logotipo,
+                        image: imagem_igreja_logotipo,
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -139,7 +139,13 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                     padding: EdgeInsets.all(20),
                     color: Color.fromRGBO(239, 235, 221, 1),
                     child: Text(
-                      """A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil".\n\nEntre suas joias mais preciosas, está a majestosa Igreja de Nossa Senhora do Carmo, uma construção que remonta a 1801 e que se tornou um ícone arquitetônico da religiosidade e da tradição da região. Esta igreja, situada na Praça da Matriz, transcende sua função religiosa para se tornar um epicentro de manifestações culturais e espirituais que permeiam a vida da comunidade local. Com raízes na influência colonial da época, a arquitetura da Igreja de Nossa Senhora do Carmo evoca a grandiosidade das igrejas mineiras “construídas antes do advento do modernismo” (IPATRIMÔNIO, s/d).\n\nCom mais de dois séculos de história, ela se tornou um símbolo de orgulho e um farol espiritual para os habitantes locais, abrigando diversas celebrações religiosas, como a Festa do Divino Espírito Santo e a veneração de sua padroeira, Nossa Senhora do Carmo.\n\nA importância histórica e cultural da Igreja de Nossa Senhora do Carmo transcende a sua relevância arquitetônica e religiosa. Em 25 de setembro de 2012, esse notável monumento foi oficialmente reconhecido e inscrito como Patrimônio Cultural do Estado do Tocantins, conforme trecho abaixo do Diário Oficial:\n\nA SECRETARIA DA CULTURA DO ESTADO DO TOCANTINS, com base nos elementos contidos nos autos do processo nº 2012 5301 000028 e fundamentada no inciso III, do artigo 2º, da Lei nº 577, de 24 de agosto de 1993, TORNA PÚBLICO o tombamento da IGREJA NOSSA SENHORA DO CARMO, localizada na Praça da Matriz, no município de Monte do Carmo, Estado do Tocantins, cujo ato foi inscrito em 25/09/2012, no Livro do Tombo Histórico e Etnológico e Livro do Tombo Arquitetônico, ocasionando valor histórico, arquitetônico e cultural ao referido bem.\n\nEssa significativa ação foi promovida pela Secretaria de Estado da Cultura (Secult), evidenciando o compromisso de proteger, preservar e conservar esse tesouro patrimonial tocantinense, realçando ainda mais seu valor histórico, arquitetônico e cultural. Neste contexto, torna-se evidente a relevância da preservação deste notável símbolo material, que transcende sua mera estrutura física e se entrelaça com a identidade cultural e espiritual da comunidade há gerações (IPATRIMÔNIO, s/d).
+                      """A Igreja Catedral de Nossa Senhora da Consolação, localizada em Tocantinópolis, é faz-se referência à padroeira da cidade, Nossa Senhora da Conceição. Embora a data exata de sua construção não seja registrada, sua arquitetura imponente reflete a profunda religiosidade da comunidade que, antes da criação do estado do Tocantins, se chamava Boa Vista. (IPATRIMONIO, s/d)
+
+A Paróquia foi criada em 31 de julho de 1852, quando Boa Vista se destacava como um importante centro comercial às margens do Rio Tocantins. Ao longo de sua história, a paróquia teve vários párocos, incluindo os padres jesuítas e dominicanos. Em 1936, o Padre João de Sousa Lima, compreendendo a necessidade de um novo espaço, iniciou a construção do atual templo (DIOCESE DE TOCANTINÓPOLIS, s/d).
+
+Após a chegada dos padres orionitas em 1952, a paróquia encontrou estabilidade e, em 1980, com a criação da Diocese de Tocantinópolis, a igreja foi elevada à condição de Catedral Diocesana, mantendo sua importância como centro espiritual da região até os dias atuais. (DIOCESE DE TOCANTINÓPOLIS, s/d).
+
+A igreja conta com uma planta com nave central e naves laterais separadas com cinco colunas em cada um dos lados e com uma cobertura com várias águas. Atualmente parte do seu piso está revestido com ladrilhos hidráulicos conforme imagem abaixo.
                           """,
                       style: TextStyle(
                         fontFamily: "Jost",
@@ -157,7 +163,7 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                             padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: imagem_catedral1,
+                                image: imagem_igreja3,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -171,7 +177,7 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                             padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: imagem_catedral2,
+                                image: imagem_igreja2,
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -185,25 +191,25 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                     color: Color.fromRGBO(239, 235, 221, 1),
                     child: Text(
                       """
-Considerando a sua notável importância no seio da comunidade local, a Igreja de Nossa Senhora do Carmo adquiriu uma significativa relevância como um valioso patrimônio cultural do Estado do Tocantins, sendo devidamente reconhecida e classificada como um Bem Cultural. 
+A pesquisa sobre a Igreja Nossa Senhora da Consolação, localizada em Tocantinópolis, foi conduzida utilizando uma metodologia que combina fontes digitais juntamente com relatos de pessoas que já visitaram o local. Essa metodologia combinou a facilidade de acesso às informações disponíveis no site da paróquia com a riqueza das experiências pessoais compartilhadas pelos visitantes da igreja.
 
-O cerne da investigação residiu na realização de pesquisas bibliográficas on-line, bem como no acesso ao parecer de tombamento da igreja, disponibilizado pelo Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN). A utilização desse dossiê, representou uma contribuição fundamental para o estudo, fornecendo informações minuciosas sobre o valor patrimonial da igreja. 
+A primeira etapa desse processo consistiu na exploração de websites com informações sobre a Igreja, incluindo o site da Paróquia, que possui um repositório valioso de informações históricas, culturais e contemporâneas relacionadas à Igreja Nossa Senhora da Consolação. Foram buscados detalhes sobre a história da igreja, sua evolução arquitetônica ao longo dos anos, eventos religiosos significativos e outras contribuições importantes para a cidade. Simultaneamente, uma abordagem qualitativa foi implementada por meio da coleta de relatos e experiências compartilhadas por indivíduos que já visitaram Tocantinópolis. Estes relatos pessoais acrescentaram uma dimensão humana à pesquisa, fornecendo visões subjetivas e impressões autênticas sobre a Igreja Nossa Senhora da Consolação. 
 
-Além disso, a pesquisa por meio do estudo virtual, permitiu conduzir uma análise meticulosa, resultando em uma narrativa coesa e fundamentada que abrange a trajetória da igreja, seus aspectos arquitetônicos e sua influência na comunidade local. Portanto, a combinação desses métodos de pesquisa revelou-se abrangente e essencial para a compreensão completa da história e do significado da Igreja de Nossa Senhora do Carmo.
+Com base nos estudos sobre a Igreja Catedral de Nossa Senhora da Consolação verificou-se sua importância como patrimônio tocantinense, no qual foi tombado em 2011 conforme o Diário Oficial Nº 3.532: 
+A SECRETARIA DA CULTURA DO ESTADO DO TOCANTINS, com base nos elementos contidos nos autos do processo nº 2011 2871 000138 e fundamentada no inciso III, do artigo 2º, da Lei n° 577, de 24 de agosto de 1993, TORNA PÚBLICO o tombamento do Templo da CATEDRAL NOSSA SENHORA DA CONSOLAÇÃO, localizada na Praça da Catedral, no município de Tocantinópolis, Estado do Tocantins, cujo ato foi inscrito em 16/05/2011, no Livro do Tombo Histórico e Etnológico, sob o n.º 01, ocasionando valor histórico e cultural ao referido bem. (TOCANTINS, 2011). 
+                          
+Conforme o Diário Oficial a catedral foi a primeira a ser tombada como patrimônio cultural do Tocantins oferecendo a população maior identidade cultural a ser transmitida para as futuras gerações.
+Após a restauração no qual recebeu investimento de RS 215.652,75 a igreja foi devolvida à população em agosto de 2012. Essa restauração foi referente à reformar o teto, fachadas, portas, janelas, calçada, sino, além de nova pintura (MACHADO, 2012).                      
 
-
-Após todas as pesquisas e discussões feitas sobre a edificação da Igreja Nossa Senhora do Carmo, foi possível chegar aos resultados de que se trata de um legítimo exemplar da época colonial com grandes valores culturais, arquitetônicos e históricos para o município de Monte do Carmo e para o Estado do Tocantins. 
-
-Com base nisto, é notório que o seu processo de tombamento foi de suma importância para a preservação da igreja, junto com sua história e cultura; além de compreender a sua relação com a cidade de Monte do Carmo e com o “Ciclo do Ouro”. 
-
-A história oral, contada e passada pelos habitantes da cidade, ajudaram a entender a importância da sua carga simbólica e significativa para a região, contribuindo ainda mais para a riqueza de patrimônios materiais no Estado.
-
-Com base nos tópicos supracitados, é perceptível que a Igreja de Nossa Senhora do Carmo é um Patrimônio Material devido a sua grande importância para cidade de Monte do Carmo e para o Tocantins, proporcionando a população local e aos visitantes, o conhecimento sobre a história e a cultura transmitida pela edificação. Dessarte, a preservação desta edificação histórica, proporciona e o sentimento de pertencimento da população local e protege a edificação para que futuras gerações tenham referência de preservação da memória da igreja, além de viabilizar a atração turística, valorizando a economia e a visibilidade local.
+Assim, as pesquisas revelaram particularmente preciosas para compreender a interseção entre a história e o presente. Ao adotar essa abordagem integrada, a pesquisa proporcionou uma visão profunda e abrangente da Igreja Nossa Senhora da Consolação em Tocantinópolis, enriquecendo o entendimento da história e do significado desta igreja icônica em meio às paisagens culturais e religiosas do Brasil.          
+                          
+Refletindo a força da religiosidade local e servindo como um ponto de referência para a identidade e memória do povo tocantinopolino, a transformação em Catedral Diocesana em 1980 destacou ainda mais sua relevância na vida da cidade e da região. 	A Catedral Diocesana de Tocantinópolis é um elemento inestimável do patrimônio cultural e histórico do Tocantins onde, preservar e reconhecer adequadamente o significado dessa catedral é essencial para manter viva a rica herança cultural da região e garantir que continue a desempenhar um papel vital na vida das gerações presentes e futuras de tocantinenses.
 
 Bibliografia
-IPATRIMÔNIO. Monte do Carmo – Igreja de Nossa Senhora do Rosário. S/d. Disponível em: <https://www.ipatrimonio.org/monte-do-carmo-igreja-de-nossa-senhora-do-rosario/#!/map=38329>. Acesso em: 16 de set. de 2023. 
-SANTANA, Jocyelma. Igreja de Monte do Carmo recebe pesquisadores da Secult. Governo do Tocantins, Tocantins, 14 de maio de 2012. Disponível em: <https://www.to.gov.br/pge/noticias /igreja-de-monte-do-carmo-recebe-pesquisadores-da-secult/15jtq 7oy9jl3>. Acesso em: 16 de set. de 2023. 
-TOCANTINS. Secretaria da Cultura do Estado do Tocantins. Diário Oficial do Estado do Tocantins: Poder Executivo, Palmas, ano 21, nº 3.722, p.21, 26 de setembro de 2012.
+DIOCESE DE TOCANTINÓPOLIS. Paróquia Nossa Senhora da Consolação​ - Diocese de Tocantinópolis. S/d. Disponível em: https://bitlybr.com/KcXVe . Acessado em: 04 de outubro de 2023. 
+IPATRIMONIO. Tocantinópolis – Catedral de Nossa Senhora da Consolação. S/d. Disponível em: https://bitlybr.com/DWoVb. Acessado em: 04 de outubro de 2023. 
+MACHADO, Cristiano. Governador entrega catedral restaurada em Tocantinópolis. 2012. Disponível em: https://bitlybr.com/KqXUz. Acessado em: 04 de outubro de 2023. 
+TOCANTINS. Secretaria da Cultura do Estado do Tocantins. Diário Oficial do Estado do Tocantins: Poder Executivo, Palmas, ano 23, nº 3.532, p.06, 26 de dezembro de 2011.                           
                           """,
                       style: TextStyle(
                         fontFamily: "Jost",

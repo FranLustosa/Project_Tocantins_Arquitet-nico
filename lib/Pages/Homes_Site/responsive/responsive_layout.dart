@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/desktop_body.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/mobile_body.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_desktop.dart';
-import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/page_view_1_desktop.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Homes_Site/page_view_1_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_2_desktop.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_2_mobile.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Page_View/responsive/dimensions.dart';
 
 import 'dimensions.dart';

@@ -5,14 +5,14 @@ import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/appBar.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/carroussel_home_page.dart';
 
-class MyDesktopBody2 extends StatefulWidget {
-  const MyDesktopBody2({Key? key}) : super(key: key);
+class MyDesktopBody3 extends StatefulWidget {
+  const MyDesktopBody3({Key? key}) : super(key: key);
 
   @override
-  State<MyDesktopBody2> createState() => _MyDesktopBody2State();
+  State<MyDesktopBody3> createState() => _MyDesktopBody3State();
 }
 
-class _MyDesktopBody2State extends State<MyDesktopBody2> {
+class _MyDesktopBody3State extends State<MyDesktopBody3> {
   ImageProvider imagem_catedral_logotipo =
       AssetImage("lib/assets/img/cards/Catedral.png");
 

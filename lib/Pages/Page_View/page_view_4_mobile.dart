@@ -3,14 +3,14 @@ import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer_mobile.dart
 import '../Widgets/carroussel_home_page.dart';
 import '../Widgets/card_home_page_mobile.dart';
 
-class MyMobileBody2 extends StatefulWidget {
-  const MyMobileBody2({Key? key}) : super(key: key);
+class MyMobileBody4 extends StatefulWidget {
+  const MyMobileBody4({Key? key}) : super(key: key);
 
   @override
-  _MyMobileBody2State createState() => _MyMobileBody2State();
+  _MyMobileBody4State createState() => _MyMobileBody4State();
 }
 
-class _MyMobileBody2State extends State<MyMobileBody2> {
+class _MyMobileBody4State extends State<MyMobileBody4> {
   final ScrollController _scrollController = ScrollController();
   ImageProvider imagem_catedral_logotipo =
       AssetImage("lib/assets/img/cards/Catedral.png");

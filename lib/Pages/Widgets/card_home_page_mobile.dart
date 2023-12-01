@@ -63,7 +63,8 @@ class MyCardMobile extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.of(context).pushNamed("/mobilevisualiza");
+                            Navigator.of(context)
+                                .pushNamed("/mobilevisualiza2");
                           },
                           child: Text(
                             "Conhecer mais",
@@ -184,7 +185,8 @@ class MyCardMobile extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.of(context).pushNamed("/catedral");
+                            Navigator.of(context)
+                                .pushNamed("/mobilevisualiza3");
                           },
                           child: Text(
                             "Conhecer mais",
