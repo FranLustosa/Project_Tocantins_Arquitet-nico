@@ -38,63 +38,12 @@ class _AppBarSuperiorState extends State<AppBarSuperior> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    "A-",
+                    "Acessibilidade",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(width: 10),
-                  Text(
-                    "A",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  SizedBox(width: 10),
-                  Text(
-                    "A+",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 40,
-                  ),
-                  TextButton(
-                    onPressed: () {
-                      if (ModalRoute.of(context)?.settings.name !=
-                          "/acessibilidade") {
-                        Navigator.of(context).pushNamed("/acessibilidade");
-                      }
-                    },
-                    child: Text(
-                      "Acessibilidade",
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  SizedBox(width: 40),
-                  // IconButton(
-                  //   onPressed: () {},
-                  //   icon: Icon(
-                  //     FontAwesomeIcons.facebook,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-                  // IconButton(
-                  //   onPressed: () {},
-                  //   icon: Icon(
-                  //     FontAwesomeIcons.xTwitter,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-                  // IconButton(
-                  //   onPressed: () {},
-                  //   icon: Icon(
-                  //     FontAwesomeIcons.instagram,
-                  //     color: Colors.white,
-                  //   ),
-                  // ),
-                  SizedBox(width: 10),
+                  SizedBox(width: 20),
                 ],
               ),
             ],
@@ -153,7 +102,7 @@ class _AppBarInferiorState extends State<AppBarInferior> {
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.of(context).pushNamed("/patrimonios");
+                        Navigator.of(context).pushNamed("/listapatrimonios");
                       },
                       child: Text(
                         "Patrimônios",
@@ -161,7 +110,9 @@ class _AppBarInferiorState extends State<AppBarInferior> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed("/home");
+                      },
                       child: Text(
                         "Quem Somos",
                         style: TextStyle(color: Colors.white),

@@ -130,7 +130,7 @@ class _MyMobileBodyState extends State<MyMobileBody> {
                     style: TextStyle(
                       color: Colors.black,
                       fontFamily: 'Jost',
-                      fontSize: MediaQuery.of(context).size.width * 0.04,
+                      fontSize: MediaQuery.of(context).size.width * 0.035,
                     ),
                   ),
                 ),

@@ -158,10 +158,10 @@ class MyCardMobile extends StatelessWidget {
                         bottom: constraints.maxWidth * 0.3,
                         left: 30,
                         child: Text(
-                          "Casa Vitor - O Museu\n\nHistórico de Taquaruçu",
+                          "Casa Vitor - O Museu Histórico\n\nde Taquaruçu",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: constraints.maxWidth * 0.06,
+                            fontSize: constraints.maxWidth * 0.05,
                           ),
                         ),
                       ),
@@ -186,7 +186,7 @@ class MyCardMobile extends StatelessWidget {
                           ),
                           onPressed: () {
                             Navigator.of(context)
-                                .pushNamed("/mobilevisualiza3");
+                                .pushNamed("/mobilevisualiza4");
                           },
                           child: Text(
                             "Conhecer mais",
@@ -222,7 +222,7 @@ class MyCardMobile extends StatelessWidget {
                           "Museu Histórico do Estado do\n\nTocantins e da Fundação Cultural",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: constraints.maxWidth * 0.058,
+                            fontSize: constraints.maxWidth * 0.05,
                           ),
                         ),
                       ),
@@ -246,7 +246,8 @@ class MyCardMobile extends StatelessWidget {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.of(context).pushNamed("/catedral");
+                            Navigator.of(context)
+                                .pushNamed("/mobilevisualiza5");
                           },
                           child: Text(
                             "Conhecer mais",

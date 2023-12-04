@@ -6,7 +6,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
+        margin: EdgeInsets.symmetric(horizontal: 80),
         color: Colors.transparent,
         child: Column(children: [
           Wrap(alignment: WrapAlignment.center, children: [
@@ -30,7 +30,7 @@ class MyCard extends StatelessWidget {
                   bottom: 250,
                   left: 30,
                   child: Text(
-                    "Catedral Nossa Senhora\n\nDas Merces - Porto Nacional",
+                    "Igreja de Nossa Senhora do\n\nCarmo - Monte Carmo, Tocantins",
                     style: TextStyle(color: Colors.white, fontSize: 28),
                   ),
                 ),
@@ -83,7 +83,7 @@ class MyCard extends StatelessWidget {
                   bottom: 250,
                   left: 30,
                   child: Text(
-                    "Igreja de Nossa Senhora\n\ndos Remédios-Arraias",
+                    "Igreja Catedral Nossa Senhora da\n\nConsolação - Tocantinópolis, TO",
                     style: TextStyle(color: Colors.white, fontSize: 30),
                   ),
                 ),
@@ -129,7 +129,7 @@ class MyCard extends StatelessWidget {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                             image:
-                                AssetImage("lib/assets/img/cards/Catedral.png"),
+                                AssetImage("lib/assets/img/cards/OldHouse.png"),
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -139,7 +139,7 @@ class MyCard extends StatelessWidget {
                       bottom: 250,
                       left: 30,
                       child: Text(
-                        "Catedral Nossa Senhora Das\n\nMerces - Porto Nacional",
+                        "Casa Vitor - O Museu Histórico de\n\n Taquaruçu, Palmas Tocantins",
                         style: TextStyle(color: Colors.white, fontSize: 30),
                       ),
                     ),
@@ -162,7 +162,7 @@ class MyCard extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.of(context).pushNamed("/catedral");
+                          Navigator.of(context).pushNamed("/desktopvisualiza4");
                         },
                         child: Text(
                           "Conhecer mais",
@@ -183,8 +183,7 @@ class MyCard extends StatelessWidget {
                         height: 450,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                            image:
-                                AssetImage("lib/assets/img/cards/Igreja.png"),
+                            image: AssetImage("lib/assets/img/cards/Museu.png"),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -194,7 +193,7 @@ class MyCard extends StatelessWidget {
                       bottom: 250,
                       left: 30,
                       child: Text(
-                        "Igreja de Nossa Senhora\n\ndos Remédios - Arraias",
+                        "Museu Histórico do Estado do\n\nTocantins e da Fundação Cultural",
                         style: TextStyle(color: Colors.white, fontSize: 30),
                       ),
                     ),
@@ -216,7 +215,9 @@ class MyCard extends StatelessWidget {
                             Color.fromRGBO(130, 104, 20, 1),
                           ),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed("/desktopvisualiza5");
+                        },
                         child: Text(
                           "Conhecer mais",
                           style: TextStyle(color: Colors.white, fontSize: 16),

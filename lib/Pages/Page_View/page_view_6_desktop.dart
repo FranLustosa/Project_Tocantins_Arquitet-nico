@@ -12,25 +12,22 @@ import 'package:project_tocantins_arquitetonico/Pages/Widgets/footer.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/appBar.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Widgets/carroussel_home_page.dart';
 
-class MyDesktopBody5 extends StatefulWidget {
-  const MyDesktopBody5({Key? key}) : super(key: key);
+class MyDesktopBody6 extends StatefulWidget {
+  const MyDesktopBody6({Key? key}) : super(key: key);
 
   @override
-  State<MyDesktopBody5> createState() => _MyDesktopBody5State();
+  State<MyDesktopBody6> createState() => _MyDesktopBody6State();
 }
 
-class _MyDesktopBody5State extends State<MyDesktopBody5> {
+class _MyDesktopBody6State extends State<MyDesktopBody6> {
   ImageProvider imagem_catedral_logotipo =
-      AssetImage("lib/assets/img/cards/Museu.png");
+      AssetImage("lib/assets/img/base_page/MuseuCasaSussuapara.png");
 
   ImageProvider imagem_catedral1 =
-      AssetImage("lib/assets/img/base_page/MuseuPalacinho1.png");
+      AssetImage("lib/assets/img/base_page/CasaSussuapara1.png");
 
   ImageProvider imagem_catedral2 =
-      AssetImage("lib/assets/img/base_page/MuseuPalacinho2.png");
-
-  ImageProvider imagem_catedral3 =
-      AssetImage("lib/assets/img/base_page/MuseuPalacinho3.png");
+      AssetImage("lib/assets/img/base_page/CasaSussuapara2.png");
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +57,8 @@ class _MyDesktopBody5State extends State<MyDesktopBody5> {
                           iconSize: 40,
                           onPressed: () {
                             if (ModalRoute.of(context)?.settings.name != "/") {
-                              Navigator.of(context).pushNamed("/");
+                              Navigator.of(context)
+                                  .pushNamed("/listapatrimonios");
                             }
                           },
                           icon: Icon(
@@ -71,7 +69,7 @@ class _MyDesktopBody5State extends State<MyDesktopBody5> {
                         Container(
                           child: Expanded(
                             child: Text(
-                              "Museu Histórico do Estado do Tocantins e da Fundação Cultural",
+                              "Museu Casa Sussuapara - Palmas, Tocantins",
                               softWrap: true,
                               style: TextStyle(
                                 fontSize: 28,
@@ -110,9 +108,11 @@ class _MyDesktopBody5State extends State<MyDesktopBody5> {
                   Padding(
                     padding: const EdgeInsets.all(20),
                     child: Text(
-                      """\nO estado do Tocantins, localizado na região Norte do Brasil, é o mais jovem da federação, criado em 1988 a partir da divisão do estado de Goiás. A sua capital, Palmas, também foi planejada e construída para ser a sede do novo estado, inaugurada em 1990. Nesse contexto, surge o Museu Palacinho, um edifício histórico que testemunhou o nascimento do estado e da cidade, e que hoje abriga um museu que conta a história e a cultura do Tocantins. Neste trabalho, vamos apresentar uma pesquisa sobre o Museu Palacinho, focando na sua história, arquitetura e importância para a cidade de Palmas. (Museu Palacinho, s/d).
-                      
-A metodologia usada para realizar esta pesquisa foi baseada em duas fontes principais: uma visita guiada ao Museu Palacinho e uma pesquisa online nos sites oficiais do museu e de outras instituições relacionadas. A visita guiada foi realizada no dia 27 de setembro de 2023, com a participação de um grupo de estudantes e um mediador do museu, que apresentou as principais informações sobre o edifício, o acervo e as exposições. A visita durou cerca de uma hora e meia e permitiu um contato direto com o patrimônio histórico e cultural do estado. A pesquisa online foi realizada entre os dias 27 e 29 de setembro de 2023.
+                      """\nO Museu Casa Suçuapara, teve suas raízes fincadas na antiga Fazenda Triângulo, tendo área construída de cerca de 219,64 m² e sua construção ocorreu antes da fundação de Palmas. Ela foi edificada no ano de 1987 com o propósito de servir como a sede da até então fazenda do local. A concepção e realização da construção foram lideradas por Jaime Batista Pereira, destinadas especialmente para seu filho, Batista Pereira. Situada nas terras destinadas ao desenvolvimento da capital estadual. Quando todas as fazendas foram desapropriadas para dar lugar ao planejamento urbano de Palmas, esta casa histórica permaneceu erguida, testemunhando as primeiras decisões governamentais durante os primeiros passos da cidade.
+
+Este imóvel, idealizado por que já foi lar da Prefeitura de Palmas e da Câmara Municipal até 20 de maio de 1990. O espaço foi nomeado de Casa Suçuapara, que anteriormente era o nome de uma fazenda localizada nesta região de Palmas. "Suçuapara" é uma palavra de origem tupi que se traduz como "grande veado brasileiro" ou, mais especificamente, "veado-galheiro". A palavra "veado" é representada por "soó-açu", denotando um animal de grande porte na caça, e a extensão "suçu-apara" ou "suçuapara“ refere-se ao veado-galheiro. Foi também sede da Legião Brasileira de Assistência (LBA) e da Administração do Parque Cesamar, além de abrigar um restaurante que servia iguarias típicas da região, atualmente é uma edificação tombada, sendo um museu de grande relevância na história de Palmas.
+
+A Casa Suçuapara foi tombada provisoriamente em 2000 e oficialmente protegida como patrimônio histórico pelo município de Palmas, por meio do Decreto nº 67, datado de 16 de março de 2005, garantindo assim sua preservação permanente. E sua última reforma foi aprovada em 23 de maio de 2023 em que A empresa Hikari Construções Ltda foi contratada para realizar uma série de melhorias na Casa Suçuapara. Estas melhorias incluem a remoção e substituição do telhado para reforçar a estrutura de madeira, bem como a aplicação de impermeabilização e medidas de controle de pragas. Além disso, trabalhos de pintura tanto interna quanto externa, atualizações nas luminárias e sistemas elétricos, além de reparos em portas e janelas, entre outros serviços. Essa reforma, com um custo total de RS 25 mil, está sendo financiada pela administração municipal como parte de seu compromisso de melhoria do espaço.
                           """,
                       style: TextStyle(
                         fontFamily: "Jost",
@@ -158,17 +158,6 @@ A metodologia usada para realizar esta pesquisa foi baseada em duas fontes princ
                   SizedBox(
                     width: 10,
                   ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: imagem_catedral3,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -185,18 +174,20 @@ A metodologia usada para realizar esta pesquisa foi baseada em duas fontes princ
                     padding: const EdgeInsets.all(20),
                     child: Text(
                       """
-O Palacinho foi a primeira edificação construída em Palmas, no ano de 1989, logo após a criação do estado do Tocantins. O edifício, feito de madeira de jatobá, serviu de sede provisória ao governo estadual até a construção do Palácio Araguaia, em 1991. O museu foi tombado pelo governo estadual em 1992, por seu valor histórico, artístico e cultural. Em 2002, o edifício foi transformado na sede do Museu Histórico do Tocantins, subordinado à Fundação Cultural do Estado. Entre 2009 e 2010, o Palacinho foi restaurado pelo Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN), que realizou intervenções na edificação, nos anexos e na área externa. (Museu Palacinho, s/d)
+O reconhecimento desta edificação como patrimônio material desempenha um papel fundamental na preservação não apenas de sua imensa história, mas também de seu significado simbólico como identidade para a própria história da capital tocantinense. 
 
-O Museu possui um acervo vasto e eclético, com objetos de valor histórico, artístico, arqueológico e etnográfico. A coleção arqueológica é composta por artefatos líticos e cerâmicos.
+Nesse contexto, é evidente que a promoção de atividades culturais que atraiam o público em geral para conhecer este espaço é essencial. Um exemplo notável disso foi a realização da Semana de Design de Palmas em 2023, que teve como sede a Casa Suçuapara e atraiu um grande número de visitantes. Da mesma forma, a constante renovação das exposições no museu é uma estratégia eficaz para manter o interesse das pessoas ao longo do tempo.
 
-Sendo um espaço de preservação, difusão e valorização da história e da cultura do Tocantins, que contribui para a formação da identidade e da cidadania dos tocantinenses. O museu oferece exposições, publicações, eventos, visitas guiadas, oficinas, palestras e outras atividades educativas e culturais para o público em geral. O museu também é um local de pesquisa e produção de conhecimento sobre o patrimônio histórico e cultural do estado, que pode servir de fonte para estudantes, professores, pesquisadores e interessados, tendo seu horário de funcionamento das oito as dezessete horas, de segunda a sábado, com entrada gratuita.
+Outro aspecto relevante a considerar é a redução do tempo em que o museu fica fechado devido a problemas de falta de restauro da edificação. Isso acaba reduzindo o acesso da população a sua própria história.
 
-Podemos concluir que o Museu Palacinho é um importante equipamento cultural para a cidade de Palmas e para o estado do Tocantins, que resgata e divulga a memória da criação do estado e da capital, além de abrigar um rico acervo de objetos históricos, artísticos, arqueológicos e etnográficos. O museu é um espaço de educação, cultura, lazer e cidadania, que pode ser visitado e aproveitado por todos.
+Conclui-se, portanto, que o Museu Casa Suçuapara desempenha um papel fundamental como guardião da tradição da cultura tocantinense, preservando a identidade e a memória da população. No entanto, é evidente que há a necessidade de um maior reconhecimento e visibilidade deste importante patrimônio material dentro do município de Palmas.
 
 Bibliografia
-Museu Palacinho. (2023). Histórico. Disponível em: [site oficial do Museu Palacinho]. Acesso em: 27 de setembro de 2023.
-IPHAN. (2010). Restauração do Palacinho. Disponível em: [site do IPHAN]. Acesso em: 29 de setembro de 2023.
-Devido ao seu valor simbólico e seu acervo histórico referente aos primeiros moradores da região, a Casa Vitor foi declarada bem tombada como patrimônio histórico e cultural de Palmas e transformada oficialmente em museu através do Decreto nº 230 de 16 de setembro de 2011.""",
+Curta Palmas. Museu Casa Suçuapara. 2021. Disponível em: <https://www.curtapalmas.com/index.php/fcp/museu-casa-sucuapara>. Acesso em: 01/10/2023.
+Prefeitura de Palmas. Exposição que une design e artesanato regional está aberta no Museu Casa Suçuapara. Disponível em:< https://www.palmas.to.gov.br/portal/noticias/exposicao-que-une-design-e-artesanato-regional-esta-aberta-no-museu-casa-sucuapara/35175/>. Acesso em: 01/10/2023.
+Agência Palmas. Final de semana terá oficinas e apresentação cultural na I Semana do Design de Palmas. Disponível em:< https://agenciapalmas.com/Noticia/236659/final-de-semana-tera-oficinas-e-apresentacao-cultural-na-i-semana-do-design-de-palmas>. Acesso em: 01/10/2023.
+Prefeitura de Palmas. Assinada Ordem de Serviço das Obras no Parque Cesamar e Museu Casa Suçuapara. Disponível em:< https://www.palmas.to.gov.br/portal/noticias/assinada-ordem-de-servico-das-obras-no-parque-cesamar-e-museu-casa-sucuapara/34297/>. Acesso em: 01/10/2023.
+Prefeitura de Palmas. Casas Sussuapara e da Cultura serão entregues nesta terça-feira (09). Disponível em:<https://www.palmas.to.gov.br/portal/noticias/casas-sussuapara-e-da-cultura-serao-entregues-nesta-terca-feira-09/20940/>. Acesso em: 01/10/2023. """,
                       style: TextStyle(
                         fontFamily: "Jost",
                         fontSize: 20,

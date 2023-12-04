@@ -17,11 +17,17 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
   ImageProvider imagem_catedral_logotipo =
       AssetImage("lib/assets/img/cards/Catedral.png");
 
-  ImageProvider imagem_catedral1 = AssetImage(
-      "lib/assets/img/base_page/Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins 2.png");
+  ImageProvider imagem_catedral1 =
+      AssetImage("lib/assets/img/cards/Igreja.png");
 
-  ImageProvider imagem_catedral2 = AssetImage(
-      "lib/assets/img/base_page/Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins 3.png");
+  ImageProvider imagem_catedral2 =
+      AssetImage("lib/assets/img/cards/OldHouse.png");
+
+  ImageProvider imagem_catedral3 = AssetImage("lib/assets/img/cards/Museu.png");
+
+  ImageProvider imagem_catedral4 =
+      AssetImage("lib/assets/img/base_page/MuseuCasaSussuapara.png");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +52,21 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                 "lib/assets/img/logo/LogoAppBarArquitetura.png",
                 height: 200,
               ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            ListTile(
+              title: Text(
+                'Home',
+                style: TextStyle(
+                  color: Color.fromRGBO(93, 76, 22, 1),
+                  fontSize: 18,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed("/home");
+              },
             ),
             SizedBox(
               height: 10,
@@ -126,144 +147,275 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                     ],
                   ),
                   SizedBox(height: 20),
-
                   // começa a lista
-                  Row(
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: imagem_catedral_logotipo,
-                            fit: BoxFit.cover,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushNamed("/mobilevisualiza2");
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imagem_catedral_logotipo,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
+                        Container(
                           width: 258,
                           height: 200,
                           color: Color.fromRGBO(239, 235, 221, 1),
-                          child: SingleChildScrollView(
-                            child: Padding(
-                              padding: const EdgeInsets.all(14),
-                              child: Text(
-                                """\n	A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil". """,
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontFamily: 'Jost',
-                                  fontSize:
-                                      MediaQuery.of(context).size.width * 0.03,
+                          child: Padding(
+                            padding: const EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
+                                SizedBox(height: 2),
+                                Text(
+                                  """\nA cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil. """,
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Jost',
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.03,
+                                  ),
+                                ),
+                              ],
                             ),
-                          )),
-                    ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: imagem_catedral_logotipo,
-                            fit: BoxFit.cover,
+                  GestureDetector(
+                    onTap: () {
+                      // Navegar para a página 2 quando o container for clicado
+                      Navigator.of(context).pushNamed("/mobilevisualiza3");
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imagem_catedral1,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
+                        Container(
                           width: 258,
                           height: 200,
                           color: Color.fromRGBO(239, 235, 221, 1),
-                          child: SingleChildScrollView(
-                            child: Padding(
-                              padding: const EdgeInsets.all(14),
-                              child: Text(
-                                """\n	A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil". """,
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontFamily: 'Jost',
-                                  fontSize:
-                                      MediaQuery.of(context).size.width * 0.03,
+                          child: Padding(
+                            padding: const EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Igreja Catedral Nossa Senhora da Consolação - Tocantinópolis, TO",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
+                                SizedBox(height: 2),
+                                Text(
+                                  """\nA Igreja Catedral de Nossa Senhora da Consolação, localizada em Tocantinópolis, é faz-se referência à padroeira da cidade, Nossa Senhora da Conceição.""",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Jost',
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.03,
+                                  ),
+                                ),
+                              ],
                             ),
-                          )),
-                    ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: imagem_catedral_logotipo,
-                            fit: BoxFit.cover,
+                  GestureDetector(
+                    onTap: () {
+                      // Navegar para a página 2 quando o container for clicado
+                      Navigator.of(context).pushNamed("/mobilevisualiza4");
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imagem_catedral2,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
+                        Container(
                           width: 258,
                           height: 200,
                           color: Color.fromRGBO(239, 235, 221, 1),
-                          child: SingleChildScrollView(
-                            child: Padding(
-                              padding: const EdgeInsets.all(14),
-                              child: Text(
-                                """\n	A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil". """,
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontFamily: 'Jost',
-                                  fontSize:
-                                      MediaQuery.of(context).size.width * 0.03,
+                          child: Padding(
+                            padding: const EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Casa Vitor - O Museu Histórico de Tquaruçu, Palmas Tocantins",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
+                                SizedBox(height: 2),
+                                Text(
+                                  """\nO Museu Casa Vitor tem como finalidade e importância pesquisar, conservar e registrar os elementos que fazem parte do patrimônio cultural dos pioneiros de Taquaruçu... """,
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Jost',
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.03,
+                                  ),
+                                ),
+                              ],
                             ),
-                          )),
-                    ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 200,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: imagem_catedral_logotipo,
-                            fit: BoxFit.cover,
+                  GestureDetector(
+                    onTap: () {
+                      // Navegar para a página 2 quando o container for clicado
+                      Navigator.of(context).pushNamed("/mobilevisualiza2");
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imagem_catedral3,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
+                        Container(
                           width: 258,
                           height: 200,
                           color: Color.fromRGBO(239, 235, 221, 1),
-                          child: SingleChildScrollView(
-                            child: Padding(
-                              padding: const EdgeInsets.all(14),
-                              child: Text(
-                                """\n	A cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil". """,
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontFamily: 'Jost',
-                                  fontSize:
-                                      MediaQuery.of(context).size.width * 0.03,
+                          child: Padding(
+                            padding: const EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Museu Histórico do Estado do Tocantins e da Fundação Cultural",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
+                                SizedBox(height: 2),
+                                Text(
+                                  """\nO estado do Tocantins, localizado na região Norte do Brasil, é o mais jovem da federação, criado em 1988 a partir da divisa...""",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Jost',
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.03,
+                                  ),
+                                ),
+                              ],
                             ),
-                          )),
-                    ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushNamed("/mobilevisualiza6");
+                    },
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 200,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: imagem_catedral4,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Container(
+                          width: 258,
+                          height: 200,
+                          color: Color.fromRGBO(239, 235, 221, 1),
+                          child: Padding(
+                            padding: const EdgeInsets.all(14),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Museu Casa Sussuapara - Palmas, Tocantins",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(height: 2),
+                                Text(
+                                  """\nO Museu Casa Suçuapara, teve suas raízes fincadas na antiga Fazenda Triângulo, tendo área construída de cerca de 219,64 m² e sua construção ocorreu antes da fundação de Palmas.""",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Jost',
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.03,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),

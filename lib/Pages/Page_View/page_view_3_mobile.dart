@@ -18,8 +18,8 @@ class _MyMobileBody3State extends State<MyMobileBody3> {
   ImageProvider imagem_igreja3 = AssetImage(
       "lib/assets/img/base_page/IgrejaCatedralNossaSenhoradaConsolação.png");
 
-  ImageProvider imagem_igreja2 = AssetImage(
-      "lib/assets/img/base_page/Igreja Catedral Nossa Senhora da Consolação - Tocantinópolis, TO.png");
+  ImageProvider imagem_igreja4 = AssetImage(
+      "lib/assets/img/base_page/IgrejaCatedralNossaSenhoradaConsolaçãoTocantinópolis.png");
 
   @override
   Widget build(BuildContext context) {
@@ -115,7 +115,7 @@ class _MyMobileBody3State extends State<MyMobileBody3> {
                       ),
                       Expanded(
                         child: Text(
-                          "Igreja de Nossa Senhora do Carmo - Monte Carmo, Tocantins",
+                          "Igreja Catedral Nossa Senhora da Consolação - Tocantinópolis, TO",
                           style: TextStyle(
                             fontSize: 20,
                             fontFamily: "Jost",
@@ -154,6 +154,7 @@ A igreja conta com uma planta com nave central e naves laterais separadas com ci
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.all(20),
                     height: 200,
                     color: Color.fromRGBO(239, 235, 221, 1),
                     child: Row(
@@ -177,7 +178,7 @@ A igreja conta com uma planta com nave central e naves laterais separadas com ci
                             padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: imagem_igreja2,
+                                image: imagem_igreja4,
                                 fit: BoxFit.cover,
                               ),
                             ),

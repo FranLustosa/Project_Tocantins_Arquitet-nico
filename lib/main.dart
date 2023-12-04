@@ -8,7 +8,12 @@ import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_3_desk
 import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_3_mobile.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_2_desktop.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_2_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_4_desktop.dart';
 import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_4_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_5_desktop.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_5_mobile.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_6_desktop.dart';
+import 'package:project_tocantins_arquitetonico/Pages/Page_View/page_view_6_mobile.dart';
 
 import 'Pages/Homes_Site/homepage.dart';
 
@@ -28,10 +33,16 @@ class MyApp extends StatelessWidget {
         "/mobilevisualiza2": (context) => MyMobileBody2(),
         "/desktopvisualiza2": (context) => MyDesktopBody2(),
         "/desktopvisualiza3": (context) => MyDesktopBody3(),
+        "/desktopvisualiza4": (context) => MyDesktopBody4(),
+        "/desktopvisualiza5": (context) => MyDesktopBody5(),
+        "/desktopvisualiza6": (context) => MyDesktopBody6(),
         "/listapatrimonios": (context) => ListPatrimoniosPage(),
         "/listapatrimoniosmobile": (context) => ListPatrimoniosPageMobile(),
         "/mobilevisualiza3": (context) => MyMobileBody3(),
         "/mobilevisualiza4": (context) => MyMobileBody4(),
+        "/mobilevisualiza5": (context) => MyMobileBody5(),
+        "/mobilevisualiza6": (context) => MyMobileBody6(),
+        "/home": (context) => HomePage(),
       },
       home: HomePage(),
     );

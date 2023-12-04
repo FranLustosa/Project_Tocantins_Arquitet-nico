@@ -142,7 +142,7 @@ class FotterInferior2 extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(2),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Image.asset(
                         'lib/assets/img/logo/dart.png',

@@ -148,6 +148,7 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
                     ),
                   ),
                   Container(
+                    padding: EdgeInsets.all(20),
                     height: 200,
                     color: Color.fromRGBO(239, 235, 221, 1),
                     child: Row(
