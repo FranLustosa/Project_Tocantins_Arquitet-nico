@@ -31,16 +31,16 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(125, 100, 18, 1),
+        iconTheme: IconThemeData(color: Colors.white),
         title: Text(
           "TOCANTINS ARQUITETÔNICO",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
       ),
       drawer: Drawer(
-        shadowColor: Color.fromRGBO(125, 100, 18, 1),
         child: ListView(
           controller: _scrollController,
           children: [
@@ -182,7 +182,7 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                                 ),
                                 SizedBox(height: 2),
                                 Text(
-                                  """\nA cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural, enraizada no período do "Ciclo do ouro no Brasil. """,
+                                  """\nA cidade de Monte do Carmo, localizada no estado do Tocantins, é um verdadeiro tesouro histórico e cultural... """,
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontFamily: 'Jost',
@@ -236,7 +236,7 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                                 ),
                                 SizedBox(height: 2),
                                 Text(
-                                  """\nA Igreja Catedral de Nossa Senhora da Consolação, localizada em Tocantinópolis, é faz-se referência à padroeira da cidade, Nossa Senhora da Conceição.""",
+                                  """\nA Igreja Catedral de Nossa Senhora da Consolação, localizada em Tocantinópolis...""",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontFamily: 'Jost',
@@ -290,7 +290,7 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                                 ),
                                 SizedBox(height: 2),
                                 Text(
-                                  """\nO Museu Casa Vitor tem como finalidade e importância pesquisar, conservar e registrar os elementos que fazem parte do patrimônio cultural dos pioneiros de Taquaruçu... """,
+                                  """\nO Museu Casa Vitor tem como finalidade e importância pesquisar, conservar e registrar... """,
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontFamily: 'Jost',
@@ -344,7 +344,7 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                                 ),
                                 SizedBox(height: 2),
                                 Text(
-                                  """\nO estado do Tocantins, localizado na região Norte do Brasil, é o mais jovem da federação, criado em 1988 a partir da divisa...""",
+                                  """\nO estado do Tocantins, localizado na região Norte do Brasil, é o mais jovem da federação...""",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontFamily: 'Jost',
@@ -398,7 +398,7 @@ class _ListPatrimoniosPageMobileState extends State<ListPatrimoniosPageMobile> {
                                 ),
                                 SizedBox(height: 2),
                                 Text(
-                                  """\nO Museu Casa Suçuapara, teve suas raízes fincadas na antiga Fazenda Triângulo, tendo área construída de cerca de 219,64 m² e sua construção ocorreu antes da fundação de Palmas.""",
+                                  """\nO Museu Casa Suçuapara, teve suas raízes fincadas na antiga Fazenda Triângulo...""",
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontFamily: 'Jost',

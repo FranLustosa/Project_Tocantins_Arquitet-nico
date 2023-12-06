@@ -27,9 +27,10 @@ class _MyMobileBody2State extends State<MyMobileBody2> {
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
         backgroundColor: Color.fromRGBO(125, 100, 18, 1),
+        iconTheme: IconThemeData(color: Colors.white),
         title: Text(
           "TOCANTINS ARQUITETÔNICO",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: 16, color: Colors.white),
         ),
       ),
       drawer: Drawer(
